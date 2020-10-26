@@ -88,3 +88,42 @@ label {
     text-decoration: none;
     font-size: 10pt;
 }
+.wrap{
+	background: blue;
+	width: 900px;
+	margin: 10px auto;
+}
+ 
+/*bagian header*/
+.wrap .header{
+	background: green;
+	/*height: 50px;*/
+	padding: 2px 10px;
+}
+ 
+/*akhir header*/
+ 
+/*bagian menu*/
+.wrap .menu{
+	background: yellow;
+}
+ 
+.wrap .menu ul{
+	padding: 0;
+	margin: 0;
+	background: yellow;
+	overflow: hidden;
+}
+ 
+.wrap .menu ul li{
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+}
+ 
+.wrap .content{
+	background: red;
+	padding: 10px;
+	height: 450px;
+	width: 880px;	
+}
