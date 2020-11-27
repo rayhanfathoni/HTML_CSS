@@ -1,41 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM REGISTER</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+<html> 
+<head> 
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <div class="kotak_login">
-        <p class="silahkan_login">FORM PENDAFTARAN</p>
+	<link rel="stylesheet" href="assets/css/bootstrap.css"> 
+	<title>Sistem Informasi Penggajian</title> 
+</head> 
+<body> 
 
 
-        <form>
-            <label>Nama Lengkap</label>
-            <input type="text" name="nama" class="form_login" placeholder="Masukkan Nama">
-            <div class="form-border"></div>
-
-            <label>Username</label>
-            <input type="text" name="username" class="form_login" placeholder="Masukkan username">
-            <div class="form-border"></div>
-
-            <label>Password</label>
-            <input type="password" name="password" class="form_login" placeholder="Masukkan Password">
-            <div class="form-border"></div>
-
-            <label>Konfirmasi Password</label>
-            <input type="password" name="repeat_password" class="form_login" placeholder="Masukkan Kembali Password">
-            <div class="form-border"></div>
-            <input type="submit" class="tombol_regist" value="REGISTER">
+	<div class="container-fluid">
  
-            <br/>
-            <br/>
-            <p>Sudah punya akun? </p> <a class="regist" href="login.html">LOGIN</a>
-			<p><a class="regist" href="index.html">KEMBALI</a></p>
-        </form>
-        </div>
-    
-</body>
+		<div class="bg-primary text-white text-center">
+			<br/>
+				<h1>Registrasi Pegawai</h1> 
+			<br/>
+
+		</div>
+
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Registrasi Pegawai</li>
+			</ol>
+		</nav>
+
+		<form>
+		<div class="form-row">
+			<div class="form-group col-md-2">
+				<label for="idpegawai">ID Pegawai</label>
+				<input type="text" id="idpegawai" class="form-control" placeholder="Masukkan ID Pegawai">
+			</div>
+			<div class="form-group col-md-2">
+				<label for="nama">Nama</label>
+				<input type="text" id="nama" class="form-control" placeholder="Nama Lengkap">
+			</div>
+		 	<div class="form-group col-md-4">
+				<label for="alamat">Alamat</label>
+				<input type="text" id="alamat" class="form-control" placeholder="Masukkan Alamat">
+			</div>
+			<div class="form-group col-md-2">
+				<label for="agama">Agama</label>
+				<select id="Jabatan" class="form-control">
+					<option value="">- Pilih Agama</option>
+					<option value="">Islam</option>
+					<option value="">Kristen</option>
+					<option value="">Atheis</option>
+				</select>
+			</div>
+			<div class="form-group col-md-2">
+				<label for="jabatan">Jabatan</label>
+				<select id="Jabatan" class="form-control">
+					<option value="">- Pilih Jabatan</option>
+					<option value="">Manager</option>
+					<option value="">Pegawai</option>
+					<option value="">Bendahara</option>
+				</select>
+			</div>
+		</div>
+		<button type="button" class="btn btn-primary"> Add <span class="badge badge-light"></span></button>
+		</form>
+
+		
+<button type="button" class="btn btn-primary "> Submit <span class="badge badge-light"></span></button>
+<button type="button" class="btn btn-light btn-outline-dark"> Cancel </button></div>
+
+	<script src="assets/js/jquery.js"></script> 
+	<script src="assets/js/popper.js"></script> 
+	<script src="assets/js/bootstrap.js"></script>
+</body> 
 </html>
